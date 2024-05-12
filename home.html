@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Listing</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fbf0e6;
+        }
+        header {
+            background-color: #6a4f4b;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .description {
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: center;
+            color: #555;
+        }
+        .price {
+            font-weight: bold;
+            color: #008000;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Listing</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="https://source.unsplash.com/150x300/?book,history" alt="History Book" />
+            <div class="title">History of Europe</div>
+            <div class="description">
+                Explore the vast histories of European nations through the ages.
+            </div>
+            <div class="price">$20</div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/150x300/?book,novel" alt="Novel" />
+            <div class="title">Whispers of Time</div>
+            <div class="description">A captivating novel spanning generations and continents.</div>
+            <div class="price">$15</div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/150x300/?book,science" alt="Science Book" />
+            <div class="title">Quantum Realities</div>
+            <div class="description">
+                Dive into the complexities of quantum mechanics in this detailed guide.
+            </div>
+            <div class="price">$25</div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/150x300/?book,children" alt="Children's Book" />
+            <div class="title">Adventures of Tom & Jerry</div>
+            <div class="description">Fun stories for children with colorful illustrations.</div>
+            <div class="price">$10</div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/150x300/?book,fantasy" alt="Fantasy Book" />
+            <div class="title">Realms of Magic</div>
+            <div class="description">
+                An epic fantasy adventure in a world of enchantment and danger.
+            </div>
+            <div class="price">$18</div>
+        </div>
+    </div>
+</body>
+</html>
